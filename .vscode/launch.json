@@ -1,0 +1,51 @@
+// .vscode/launch.json
+{
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "node1",
+      "type": "python",
+      "request": "attach",
+      "port": 10001,
+      "host": "localhost",
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/app",
+          "remoteRoot": "/app"
+        }
+      ]
+    },
+    {
+      "name": "node2",
+      "type": "python",
+      "request": "attach",
+      "port": 10002,
+      "host": "localhost",
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/app",
+          "remoteRoot": "/app"
+        }
+      ]
+    },
+    {
+      "name": "node3",
+      "type": "python",
+      "request": "attach",
+      "port": 10003,
+      "host": "localhost",
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/app",
+          "remoteRoot": "/app"
+        }
+      ]
+    }
+  ]
+}
